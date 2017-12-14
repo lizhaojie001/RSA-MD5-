@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52E5A09C1FE267E5006CFDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5A09B1FE267E5006CFDAC /* AppDelegate.swift */; };
+		52E5A09E1FE267E5006CFDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5A09D1FE267E5006CFDAC /* ViewController.swift */; };
+		52E5A0A11FE267E5006CFDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A09F1FE267E5006CFDAC /* Main.storyboard */; };
+		52E5A0A31FE267E5006CFDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A0A21FE267E5006CFDAC /* Assets.xcassets */; };
+		52E5A0A61FE267E5006CFDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A0A41FE267E5006CFDAC /* LaunchScreen.storyboard */; };
+		52E5A16D1FE2686D006CFDAC /* QDRSAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E5A1161FE2686C006CFDAC /* QDRSAHandler.m */; };
+		52E5A16E1FE2686D006CFDAC /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E5A1191FE2686C006CFDAC /* NSString+Base64.m */; };
+		52E5A16F1FE2686D006CFDAC /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E5A11B1FE2686C006CFDAC /* libcrypto.a */; };
+		52E5A1701FE2686D006CFDAC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A11C1FE2686C006CFDAC /* LICENSE */; };
+		52E5A1711FE2686D006CFDAC /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E5A11D1FE2686C006CFDAC /* libssl.a */; };
+		52E5A1721FE2686D006CFDAC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E5A16C1FE2686C006CFDAC /* NSData+Base64.m */; };
+		52E5A1751FE26BF6006CFDAC /* rsa_public_keyofSSO.pem in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A1731FE26BF5006CFDAC /* rsa_public_keyofSSO.pem */; };
+		52E5A1761FE26BF6006CFDAC /* rsa_private_key_ofSSO.pem in Resources */ = {isa = PBXBuildFile; fileRef = 52E5A1741FE26BF6006CFDAC /* rsa_private_key_ofSSO.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52E5A0981FE267E5006CFDAC /* 公私钥匙RSA加解密.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "公私钥匙RSA加解密.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E5A09B1FE267E5006CFDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52E5A09D1FE267E5006CFDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E5A0A01FE267E5006CFDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52E5A0A21FE267E5006CFDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E5A0A51FE267E5006CFDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E5A0A71FE267E5006CFDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E5A1111FE26857006CFDAC /* 公私钥匙RSA加解密-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "公私钥匙RSA加解密-Bridging-Header.h"; sourceTree = "<group>"; };
+		52E5A1161FE2686C006CFDAC /* QDRSAHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDRSAHandler.m; sourceTree = "<group>"; };
+		52E5A1171FE2686C006CFDAC /* QDRSAHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDRSAHandler.h; sourceTree = "<group>"; };
+		52E5A1191FE2686C006CFDAC /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		52E5A11B1FE2686C006CFDAC /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		52E5A11C1FE2686C006CFDAC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		52E5A11D1FE2686C006CFDAC /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		52E5A11F1FE2686C006CFDAC /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		52E5A1201FE2686C006CFDAC /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		52E5A1211FE2686C006CFDAC /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		52E5A1221FE2686C006CFDAC /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		52E5A1231FE2686C006CFDAC /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		52E5A1241FE2686C006CFDAC /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		52E5A1251FE2686C006CFDAC /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		52E5A1261FE2686C006CFDAC /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		52E5A1271FE2686C006CFDAC /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		52E5A1281FE2686C006CFDAC /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		52E5A1291FE2686C006CFDAC /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		52E5A12A1FE2686C006CFDAC /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		52E5A12B1FE2686C006CFDAC /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		52E5A12C1FE2686C006CFDAC /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		52E5A12D1FE2686C006CFDAC /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		52E5A12E1FE2686C006CFDAC /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		52E5A12F1FE2686C006CFDAC /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		52E5A1301FE2686C006CFDAC /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		52E5A1311FE2686C006CFDAC /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		52E5A1321FE2686C006CFDAC /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		52E5A1331FE2686C006CFDAC /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		52E5A1341FE2686C006CFDAC /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		52E5A1351FE2686C006CFDAC /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		52E5A1361FE2686C006CFDAC /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		52E5A1371FE2686C006CFDAC /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		52E5A1381FE2686C006CFDAC /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		52E5A1391FE2686C006CFDAC /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		52E5A13A1FE2686C006CFDAC /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		52E5A13B1FE2686C006CFDAC /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		52E5A13C1FE2686C006CFDAC /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		52E5A13D1FE2686C006CFDAC /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		52E5A13E1FE2686C006CFDAC /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		52E5A13F1FE2686C006CFDAC /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		52E5A1401FE2686C006CFDAC /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		52E5A1411FE2686C006CFDAC /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		52E5A1421FE2686C006CFDAC /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		52E5A1431FE2686C006CFDAC /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		52E5A1441FE2686C006CFDAC /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		52E5A1451FE2686C006CFDAC /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		52E5A1461FE2686C006CFDAC /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		52E5A1471FE2686C006CFDAC /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		52E5A1481FE2686C006CFDAC /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		52E5A1491FE2686C006CFDAC /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		52E5A14A1FE2686C006CFDAC /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		52E5A14B1FE2686C006CFDAC /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		52E5A14C1FE2686C006CFDAC /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		52E5A14D1FE2686C006CFDAC /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		52E5A14E1FE2686C006CFDAC /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		52E5A14F1FE2686C006CFDAC /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		52E5A1501FE2686C006CFDAC /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		52E5A1511FE2686C006CFDAC /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		52E5A1521FE2686C006CFDAC /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		52E5A1531FE2686C006CFDAC /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		52E5A1541FE2686C006CFDAC /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		52E5A1551FE2686C006CFDAC /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		52E5A1561FE2686C006CFDAC /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		52E5A1571FE2686C006CFDAC /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		52E5A1581FE2686C006CFDAC /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		52E5A1591FE2686C006CFDAC /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		52E5A15A1FE2686C006CFDAC /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		52E5A15B1FE2686C006CFDAC /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		52E5A15C1FE2686C006CFDAC /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		52E5A15D1FE2686C006CFDAC /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		52E5A15E1FE2686C006CFDAC /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		52E5A15F1FE2686C006CFDAC /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		52E5A1601FE2686C006CFDAC /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		52E5A1611FE2686C006CFDAC /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		52E5A1621FE2686C006CFDAC /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		52E5A1631FE2686C006CFDAC /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		52E5A1641FE2686C006CFDAC /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		52E5A1651FE2686C006CFDAC /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		52E5A1661FE2686C006CFDAC /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		52E5A1671FE2686C006CFDAC /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		52E5A1681FE2686C006CFDAC /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		52E5A1691FE2686C006CFDAC /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		52E5A16A1FE2686C006CFDAC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		52E5A16B1FE2686C006CFDAC /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		52E5A16C1FE2686C006CFDAC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		52E5A1731FE26BF5006CFDAC /* rsa_public_keyofSSO.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_keyofSSO.pem; sourceTree = "<group>"; };
+		52E5A1741FE26BF6006CFDAC /* rsa_private_key_ofSSO.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key_ofSSO.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E5A0951FE267E5006CFDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5A1711FE2686D006CFDAC /* libssl.a in Frameworks */,
+				52E5A16F1FE2686D006CFDAC /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E5A08F1FE267E5006CFDAC = {
+			isa = PBXGroup;
+			children = (
+				52E5A09A1FE267E5006CFDAC /* 公私钥匙RSA加解密 */,
+				52E5A0991FE267E5006CFDAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E5A0991FE267E5006CFDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A0981FE267E5006CFDAC /* 公私钥匙RSA加解密.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E5A09A1FE267E5006CFDAC /* 公私钥匙RSA加解密 */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A1741FE26BF6006CFDAC /* rsa_private_key_ofSSO.pem */,
+				52E5A1731FE26BF5006CFDAC /* rsa_public_keyofSSO.pem */,
+				52E5A09B1FE267E5006CFDAC /* AppDelegate.swift */,
+				52E5A09D1FE267E5006CFDAC /* ViewController.swift */,
+				52E5A09F1FE267E5006CFDAC /* Main.storyboard */,
+				52E5A0A21FE267E5006CFDAC /* Assets.xcassets */,
+				52E5A0A41FE267E5006CFDAC /* LaunchScreen.storyboard */,
+				52E5A0A71FE267E5006CFDAC /* Info.plist */,
+				52E5A1111FE26857006CFDAC /* 公私钥匙RSA加解密-Bridging-Header.h */,
+				52E5A1151FE2686C006CFDAC /* OpenSSL */,
+			);
+			path = "公私钥匙RSA加解密";
+			sourceTree = "<group>";
+		};
+		52E5A1151FE2686C006CFDAC /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A1161FE2686C006CFDAC /* QDRSAHandler.m */,
+				52E5A1171FE2686C006CFDAC /* QDRSAHandler.h */,
+				52E5A1181FE2686C006CFDAC /* openssl */,
+			);
+			path = OpenSSL;
+			sourceTree = "<group>";
+		};
+		52E5A1181FE2686C006CFDAC /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A1191FE2686C006CFDAC /* NSString+Base64.m */,
+				52E5A11A1FE2686C006CFDAC /* include */,
+				52E5A16A1FE2686C006CFDAC /* NSData+Base64.h */,
+				52E5A16B1FE2686C006CFDAC /* NSString+Base64.h */,
+				52E5A16C1FE2686C006CFDAC /* NSData+Base64.m */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		52E5A11A1FE2686C006CFDAC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A11B1FE2686C006CFDAC /* libcrypto.a */,
+				52E5A11C1FE2686C006CFDAC /* LICENSE */,
+				52E5A11D1FE2686C006CFDAC /* libssl.a */,
+				52E5A11E1FE2686C006CFDAC /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		52E5A11E1FE2686C006CFDAC /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				52E5A11F1FE2686C006CFDAC /* pem2.h */,
+				52E5A1201FE2686C006CFDAC /* pem.h */,
+				52E5A1211FE2686C006CFDAC /* ssl3.h */,
+				52E5A1221FE2686C006CFDAC /* ossl_typ.h */,
+				52E5A1231FE2686C006CFDAC /* dtls1.h */,
+				52E5A1241FE2686C006CFDAC /* err.h */,
+				52E5A1251FE2686C006CFDAC /* bn.h */,
+				52E5A1261FE2686C006CFDAC /* blowfish.h */,
+				52E5A1271FE2686C006CFDAC /* cms.h */,
+				52E5A1281FE2686C006CFDAC /* engine.h */,
+				52E5A1291FE2686C006CFDAC /* conf_api.h */,
+				52E5A12A1FE2686C006CFDAC /* x509.h */,
+				52E5A12B1FE2686C006CFDAC /* asn1_mac.h */,
+				52E5A12C1FE2686C006CFDAC /* ui.h */,
+				52E5A12D1FE2686C006CFDAC /* kssl.h */,
+				52E5A12E1FE2686C006CFDAC /* sha.h */,
+				52E5A12F1FE2686C006CFDAC /* symhacks.h */,
+				52E5A1301FE2686C006CFDAC /* asn1.h */,
+				52E5A1311FE2686C006CFDAC /* opensslconf.h */,
+				52E5A1321FE2686C006CFDAC /* bio.h */,
+				52E5A1331FE2686C006CFDAC /* rc2.h */,
+				52E5A1341FE2686C006CFDAC /* dh.h */,
+				52E5A1351FE2686C006CFDAC /* ui_compat.h */,
+				52E5A1361FE2686C006CFDAC /* x509v3.h */,
+				52E5A1371FE2686C006CFDAC /* ssl23.h */,
+				52E5A1381FE2686C006CFDAC /* conf.h */,
+				52E5A1391FE2686C006CFDAC /* md5.h */,
+				52E5A13A1FE2686C006CFDAC /* x509_vfy.h */,
+				52E5A13B1FE2686C006CFDAC /* txt_db.h */,
+				52E5A13C1FE2686C006CFDAC /* safestack.h */,
+				52E5A13D1FE2686C006CFDAC /* ecdsa.h */,
+				52E5A13E1FE2686C006CFDAC /* objects.h */,
+				52E5A13F1FE2686C006CFDAC /* pkcs12.h */,
+				52E5A1401FE2686C006CFDAC /* crypto.h */,
+				52E5A1411FE2686C006CFDAC /* opensslv.h */,
+				52E5A1421FE2686C006CFDAC /* pkcs7.h */,
+				52E5A1431FE2686C006CFDAC /* obj_mac.h */,
+				52E5A1441FE2686C006CFDAC /* buffer.h */,
+				52E5A1451FE2686C006CFDAC /* ssl.h */,
+				52E5A1461FE2686C006CFDAC /* srp.h */,
+				52E5A1471FE2686C006CFDAC /* camellia.h */,
+				52E5A1481FE2686C006CFDAC /* evp.h */,
+				52E5A1491FE2686C006CFDAC /* e_os2.h */,
+				52E5A14A1FE2686C006CFDAC /* md4.h */,
+				52E5A14B1FE2686C006CFDAC /* hmac.h */,
+				52E5A14C1FE2686C006CFDAC /* aes.h */,
+				52E5A14D1FE2686C006CFDAC /* comp.h */,
+				52E5A14E1FE2686C006CFDAC /* cast.h */,
+				52E5A14F1FE2686C006CFDAC /* rc4.h */,
+				52E5A1501FE2686C006CFDAC /* stack.h */,
+				52E5A1511FE2686C006CFDAC /* des.h */,
+				52E5A1521FE2686C006CFDAC /* ocsp.h */,
+				52E5A1531FE2686C006CFDAC /* ec.h */,
+				52E5A1541FE2686C006CFDAC /* ecdh.h */,
+				52E5A1551FE2686C006CFDAC /* rand.h */,
+				52E5A1561FE2686C006CFDAC /* ts.h */,
+				52E5A1571FE2686C006CFDAC /* pqueue.h */,
+				52E5A1581FE2686C006CFDAC /* dso.h */,
+				52E5A1591FE2686C006CFDAC /* seed.h */,
+				52E5A15A1FE2686C006CFDAC /* modes.h */,
+				52E5A15B1FE2686C006CFDAC /* ssl2.h */,
+				52E5A15C1FE2686C006CFDAC /* rsa.h */,
+				52E5A15D1FE2686C006CFDAC /* krb5_asn.h */,
+				52E5A15E1FE2686C006CFDAC /* des_old.h */,
+				52E5A15F1FE2686C006CFDAC /* ripemd.h */,
+				52E5A1601FE2686C006CFDAC /* whrlpool.h */,
+				52E5A1611FE2686C006CFDAC /* tls1.h */,
+				52E5A1621FE2686C006CFDAC /* mdc2.h */,
+				52E5A1631FE2686C006CFDAC /* dsa.h */,
+				52E5A1641FE2686C006CFDAC /* srtp.h */,
+				52E5A1651FE2686C006CFDAC /* asn1t.h */,
+				52E5A1661FE2686C006CFDAC /* cmac.h */,
+				52E5A1671FE2686C006CFDAC /* ebcdic.h */,
+				52E5A1681FE2686C006CFDAC /* idea.h */,
+				52E5A1691FE2686C006CFDAC /* lhash.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E5A0971FE267E5006CFDAC /* 公私钥匙RSA加解密 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E5A0AA1FE267E5006CFDAC /* Build configuration list for PBXNativeTarget "公私钥匙RSA加解密" */;
+			buildPhases = (
+				52E5A0941FE267E5006CFDAC /* Sources */,
+				52E5A0951FE267E5006CFDAC /* Frameworks */,
+				52E5A0961FE267E5006CFDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "公私钥匙RSA加解密";
+			productName = "公私钥匙RSA加解密";
+			productReference = 52E5A0981FE267E5006CFDAC /* 公私钥匙RSA加解密.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E5A0901FE267E5006CFDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "macbook pro";
+				TargetAttributes = {
+					52E5A0971FE267E5006CFDAC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 52E5A0931FE267E5006CFDAC /* Build configuration list for PBXProject "公私钥匙RSA加解密" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E5A08F1FE267E5006CFDAC;
+			productRefGroup = 52E5A0991FE267E5006CFDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E5A0971FE267E5006CFDAC /* 公私钥匙RSA加解密 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E5A0961FE267E5006CFDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5A0A61FE267E5006CFDAC /* LaunchScreen.storyboard in Resources */,
+				52E5A0A31FE267E5006CFDAC /* Assets.xcassets in Resources */,
+				52E5A1751FE26BF6006CFDAC /* rsa_public_keyofSSO.pem in Resources */,
+				52E5A1701FE2686D006CFDAC /* LICENSE in Resources */,
+				52E5A1761FE26BF6006CFDAC /* rsa_private_key_ofSSO.pem in Resources */,
+				52E5A0A11FE267E5006CFDAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E5A0941FE267E5006CFDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5A16E1FE2686D006CFDAC /* NSString+Base64.m in Sources */,
+				52E5A16D1FE2686D006CFDAC /* QDRSAHandler.m in Sources */,
+				52E5A1721FE2686D006CFDAC /* NSData+Base64.m in Sources */,
+				52E5A09E1FE267E5006CFDAC /* ViewController.swift in Sources */,
+				52E5A09C1FE267E5006CFDAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52E5A09F1FE267E5006CFDAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E5A0A01FE267E5006CFDAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E5A0A41FE267E5006CFDAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E5A0A51FE267E5006CFDAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E5A0A81FE267E5006CFDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52E5A0A91FE267E5006CFDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E5A0AB1FE267E5006CFDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AKB523DZ4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "公私钥匙RSA加解密/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/公私钥匙RSA加解密/OpenSSL/openssl/include",
+					"$(SRCROOT)/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zj.----RSA---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "公私钥匙RSA加解密/公私钥匙RSA加解密-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		52E5A0AC1FE267E5006CFDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AKB523DZ4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "公私钥匙RSA加解密/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/公私钥匙RSA加解密/OpenSSL/openssl/include",
+					"$(SRCROOT)/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zj.----RSA---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "公私钥匙RSA加解密/公私钥匙RSA加解密-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E5A0931FE267E5006CFDAC /* Build configuration list for PBXProject "公私钥匙RSA加解密" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E5A0A81FE267E5006CFDAC /* Debug */,
+				52E5A0A91FE267E5006CFDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E5A0AA1FE267E5006CFDAC /* Build configuration list for PBXNativeTarget "公私钥匙RSA加解密" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E5A0AB1FE267E5006CFDAC /* Debug */,
+				52E5A0AC1FE267E5006CFDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E5A0901FE267E5006CFDAC /* Project object */;
+}
